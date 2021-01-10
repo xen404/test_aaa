@@ -11,6 +11,12 @@ LANDING PAGE
 DETAILED VIEW
 ![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot2.png?raw=true)
 
+LANDING PAGE MOBILE
+![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot3.png?raw=true)
+
+DETAILED VIEW MOBILE
+![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot4.png?raw=true)
+
 ## Installation and Setup Instructions
  
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
