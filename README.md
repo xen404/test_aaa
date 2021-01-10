@@ -29,7 +29,7 @@ Installation:
 
 To Start Server:
 
-`npm start`  
+`npm run start`  
 
 To Visit App:
 
