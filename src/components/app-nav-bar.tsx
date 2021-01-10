@@ -27,11 +27,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-interface AppBarSortProps {
+interface ElevateAppBarProps {
   ClickHandler: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function ElevateAppBar(Props: AppBarSortProps) {
+export default function ElevateAppBar(Props: ElevateAppBarProps) {
   const classes = useStyles();
   let history = useHistory();
   let location = useLocation();
@@ -52,7 +52,6 @@ export default function ElevateAppBar(Props: AppBarSortProps) {
           <Toolbar className={classes.toolbar}>
             <Typography variant="h6">all about teams</Typography>
             <IconButton
-              style={{ position: "absolute", right: "10px" }}
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"

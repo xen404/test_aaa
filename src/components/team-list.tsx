@@ -23,18 +23,24 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+interface TeamListProps {
+   teams: Team[];
+  }
 
-
-export default function TeamList(props: { teams: Team[] }) {
+export default function TeamList(props: TeamListProps) {
   const classes = useStyles();
 
   return (
     <List className={classes.root}>
       {props.teams.map((team) => {
-       
         return (
           <div key={team.id}>
-            <ListItem alignItems="flex-start" button component={Link} to={"/team/" + team.id}>
+            <ListItem
+              alignItems="flex-start"
+              button
+              component={Link}
+              to={"/team/" + team.id}
+            >
               <ListItemAvatar>
                 <Avatar alt="Remy Sharp" src={team.image} />
               </ListItemAvatar>

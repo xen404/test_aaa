@@ -1,7 +1,11 @@
 import React from "react";
 import Team from "../team-model";
 
-export default function TeamDetailedView(props: { data: Team }) {
+interface TeamDetailedViewProps {
+  data: Team;
+}
+
+export default function TeamDetailedView(props: TeamDetailedViewProps) {
   return (
     <div>
       <div className="BlackContainer" style={{ height: "15px" }}></div>

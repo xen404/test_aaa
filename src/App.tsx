@@ -29,8 +29,6 @@ function App() {
   ] = React.useState<boolean>(false);
 
   React.useEffect(() => {
-    console.log("UseEffect INITIAL");
-    console.log("SortByValue : " + sortByValue);
     axios
       .get<Team[]>("https://public.allaboutapps.at/hiring/clubs.json", {
         headers: {
@@ -38,9 +36,9 @@ function App() {
         },
       })
       .then((response) => {
-        const arr : Team[] = response.data;
-       
-        arr.sort((obj1, obj2) => {
+        const fetchedData: Team[] = response.data;
+
+        fetchedData.sort((obj1, obj2) => {
           if (obj1.name > obj2.name) {
             return 1;
           }
@@ -50,15 +48,10 @@ function App() {
           }
 
           return 0;
-        })
-      
-      
-        setTeams(
-          arr);
+        });
+
+        setTeams(fetchedData);
         setLoading(false);
-        //setSortByValue(false);
-        console.log("FETCHED DATA");
-        console.log(response.data);
       })
       .catch((ex) => {
         const error =
@@ -70,24 +63,15 @@ function App() {
       });
   }, []);
 
-  React.useEffect(() => {
-    console.log("UseEffect SORT");
-    console.log("SortByValue : " + sortByValue);
-    //sortTeams();
-  }, [sortByValue]);
+  React.useEffect(() => {}, [sortByValue]);
 
   const onChangeSort = () => {
     let val: boolean = !sortByValue;
-    console.log("OnChange");
-    console.log("SortByValue : " + sortByValue);
     setSortByValue(val);
-    console.log("SortByValue : " + sortByValue);
     sortTeams();
   };
 
-
   const sortTeams = (teamsParam: Team[] = teams) => {
-    console.log("sorting ...");
     let sorted: Team[];
     if (!sortByValue) {
       sorted = teams.sort((obj1, obj2) => {
@@ -100,9 +84,7 @@ function App() {
         }
 
         return 0;
-        
       });
-      console.log("Data was sorted by value");
     } else {
       sorted = teams.sort((obj1, obj2) => {
         if (obj1.name > obj2.name) {
@@ -115,11 +97,8 @@ function App() {
 
         return 0;
       });
-      console.log("Data was sorted by name");
     }
     setTeams(sorted);
-
-    console.log(sorted);
   };
 
   return (
