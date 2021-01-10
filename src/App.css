@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.AppBarCustom {
+  background-color: #01c13b !important;
+}
+.SortBtn {
+  float: right !important;
+}
+
+.LogoContainer {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Cell {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.UpperContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.TeamName {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: x-large;
+}
+
+.TextCell {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.BlackContainer {
+  background-color: #333333;
+}
+
+.TextContent {
+  padding-left: 15px;
+}
+
+.Loading, .Error {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  
+}
+
+.Error {
+  color: red;
+  font-size: xx-large;
+}
