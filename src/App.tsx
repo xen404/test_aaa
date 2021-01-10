@@ -6,7 +6,7 @@ import Team from "./team-model";
 import "./App.css";
 import TeamList from "./components/team-list";
 import AppBar from "./components/app-nav-bar";
-import TeamDetailedView from "./components/TeamDetailedView";
+import TeamDetailedView from "./components/team-detailed-view";
 
 function App() {
   const defaultTeams: Team[] = [];
