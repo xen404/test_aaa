@@ -6,7 +6,7 @@ An application used to display and sort football teams provided by https://publi
 ## Project Screen Shot(s)
  
 [ PRETEND SCREEN SHOT IS HERE ]
-![alt text](https://github.com/xen404/test_aaa/blob/main/screenshot1.png?raw=true)
+![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot1.png?raw=true)
 
 
 [ PRETEND OTHER SCREEN SHOT IS HERE ]
