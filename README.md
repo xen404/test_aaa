@@ -3,13 +3,13 @@
 An application used to display and sort football teams provided by https://public.allaboutapps.at/hiring/clubs.json
 , built with React, Typescript and CSS.
 
-## Project Screen Shot(s)
+## Project Screen Shots
  
-[ PRETEND SCREEN SHOT IS HERE ]
+LANDING PAGE
 ![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot1.png?raw=true)
 
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+DETAILED VIEW
+![alt text](https://github.com/xen404/test_aaa/blob/main/src/screenshots/screenshot2.png?raw=true)
 
 ## Installation and Setup Instructions
  
